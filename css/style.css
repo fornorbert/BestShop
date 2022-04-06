@@ -264,10 +264,26 @@ p {
     border-radius: 25px;
     box-sizing: content-box;
     padding: 10px;
+    position: relative;
+}
+.table::after{
+    content: "Begin";
+    font-family:"Open Sans" ;
+    width: 30%;
+    height: auto;
+    color: #F7F7F7;
+    border-radius: 40px;
+    padding: 15px 30px;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
 }
 
 .basic {
     border: 1px solid #FB3B64;
+}
+.basic::after{
+    background-color: #FB3B64;
 }
 .basic h4{
     color: #FB3B64;
@@ -280,12 +296,18 @@ p {
     margin-right: 5%;
     padding: 30px;
 }
+.professional::after{
+    background-color: #08A6E4;
+}
 .professional h4{
     color: #08A6E4;
 }
 
 .premium {
     border: 1px solid #55DFB4;
+}
+.premium::after{
+    background-color: #55DFB4;
 }
 .premium h4{
     color: #55DFB4;
